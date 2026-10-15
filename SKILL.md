@@ -3,12 +3,12 @@ name: visual-explainer
 description: Create concise visual explanation cards, charts, comparisons, and technical summaries with a black background, white text, and purposeful color accents. Deliver shareable PNG images and editable HTML.
 metadata:
   author: arkiental
-  version: "1.4.0"
+  version: "1.5.0"
 ---
 
 # Visual Explainer — Black
 
-Turn the user's information into a visual that is easy to read in a social post. Default to one compact card, not a long web article. Keep the background pure black and primary text white. Use Futura for all typography, including chart labels and footnotes. Do not silently substitute another font. Use the bundled faces and weight mappings in [assets/fonts/README.md](assets/fonts/README.md), with `assets/fonts/fonts.css` as the font-face source. Embed font data for standalone HTML or copy the font assets beside the deliverable and adjust paths. Color is welcome in charts, model labels, key values, and meaningful highlights; cyan is an option, not a restriction.
+Turn the user's information into a visual that is easy to read in a social post. Choose a canvas large enough to explain the subject: a compact card for a simple point, a composed multi-section image or a small set of images for a substantial comparison. Concise copy does not mean shallow analysis or a basic layout. Keep the background pure black and primary text white. Use Futura for all typography, including chart labels and footnotes. Do not silently substitute another font. Use the bundled faces and weight mappings in [assets/fonts/README.md](assets/fonts/README.md), with `assets/fonts/fonts.css` as the font-face source. Embed font data for standalone HTML or copy the font assets beside the deliverable and adjust paths. Color is welcome in charts, model labels, key values, and meaningful highlights; cyan is an option, not a restriction.
 
 ## Inspect the source material
 
@@ -41,6 +41,14 @@ Use these images as examples of layout, hierarchy, density, and color. Their tex
 - Do not add speculative recommendations as findings. Mark open decisions and suggested next steps clearly.
 - Use the supplied data for a visualization request. Verify external factual claims when adding them; do not silently substitute current values for the user's observations.
 
+## Plan the visual explanation
+
+Before HTML, identify what the reader should understand and the few differences, relationships, or mechanisms that establish it. Choose a visual treatment for each: an annotated screenshot, enlarged detail, matched workflow, capability grouping, scale comparison, or diagram. Read [composition guidance](references/composition.md) for product comparisons, screenshot-heavy work, and substantial explainers.
+
+Consider two plausible compositions internally and choose the one that makes the important distinctions easiest to see. Do not default to two screenshots followed by a long table. Screenshots establish context; annotation and layout should explain where to look and why the visible detail matters. Use a table when precise row-by-row lookup is the actual task.
+
+Keep the subject title simple, but let the body do real explanatory work. Removing slogans, disclaimers, and repetition should create room for better figures, not remove useful detail. Do not force a complex topic into a sparse card or a fixed number of text elements.
+
 ## Compose
 
 Use the style guide for design choices. Build one complete HTML file with inline CSS and SVG/JS as needed. Hand-authored SVG or HTML/CSS suits simple charts and diagrams; use standard plotting tools for scientific or publication figures. Avoid generated raster text and charts.
@@ -48,7 +56,7 @@ Use the style guide for design choices. Build one complete HTML file with inline
 Choose a layout that fits the relationship. Do not reuse a three-column report structure for every input:
 - A message about an object or feature: a prominent source image beside or above a short explanation, with the key cost, constraint, or question emphasized. Let the image do explanatory work.
 - A short list: aligned rows with a brief explanation per item.
-- A comparison: shared columns, direct labels, bars on a common scale.
+- A comparison: draw the relevant differences with aligned screenshots, matched workflows, capability groups, or bars on a common scale. Use shared-column tables for precise facts that benefit from lookup; do not use sentence-heavy tables as the only explanation of a workflow.
 - A range: solid lower bound plus hatched uncertainty, with a clear reference line.
 - A mechanism: a few nodes and labeled arrows; show the change or bottleneck.
 - A richer report: a subject title and figures organized around the requested content. Include KPI rows or methodology only when they serve the request; they are not required layout sections.
@@ -60,7 +68,7 @@ Use arrows only for a real sequence, dependency, or causal relationship. Avoid g
 Save a descriptively named HTML file and matching PNG in `~/.agent/diagrams/`, or the user's requested destination. Keep earlier variants when useful; update the current source when editing. Export at 2× resolution for crisp text, then crop to the intended card, not the browser chrome. Use an available permitted renderer; do not work around policy restrictions.
 
 Before delivery:
-1. Compare the rendered PNG with the source: is the useful subject image present, and can the reader identify the subject and main point at a glance? Remove text that merely repeats the image or another sentence. Inspect the rendered PNG. Fix clipped text, collisions, tiny labels, awkward line breaks, excess empty space, and misleading scales.
+1. Check explanatory quality: can the reader see the meaningful differences without reading every table cell? Are screenshots legible at their final size, with useful details enlarged or annotated? If the result is only headings, pasted screenshots, and prose rows for a substantial comparison, revisit composition. Compare the rendered PNG with the source: is the useful subject image present, and can the reader identify the subject and main point at a glance? Remove text that merely repeats the image or another sentence. Inspect the rendered PNG. Fix clipped text, collisions, tiny labels, awkward line breaks, excess empty space, and misleading scales.
 2. Check arithmetic, units, denominators, date windows, and legend meanings internally. Bars use honest baselines and consistent scales. Do not print internal QA notes such as “Common scale · zero baseline”. Check visible copy for an unnecessary subtitle, editorial headline, “reported” qualifier, source-image credit, or disclaimer footer and remove them unless explicitly required.
 3. Check that the card is readable at normal social-feed size. If it is not, cut repetition or split cards rather than shrinking everything.
 4. Check the HTML at desktop and narrow widths if delivering it as a responsive page. Keep export layout stable.

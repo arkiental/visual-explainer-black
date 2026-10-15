@@ -30,11 +30,17 @@ More than cyan is allowed. Pick colors for meaning and use them consistently:
 
 The palette above is illustrative, not a requirement to use red for negative outcomes or yellow for every price. A subject’s red color can be a neutral visual accent. Use one accent for simple cards; two to four for real categories or series. Neutrals still carry most text. Do not recolor every sentence. Colored text must remain readable against black. Pair color with labels, order, patterns, or shapes; never make color the only way to tell categories apart. Brand colors are optional only when they are relevant and identifiable.
 
+## Composition and hierarchy
+
+Use a consistent grid, with deliberately varied spans: a wide overview, a focused close-up, or aligned small diagrams as the content demands. Establish one dominant figure and quieter supporting details. Equal columns are useful for direct comparison, but every section need not repeat the same two boxes. Keep comparable details at comparable sizes.
+
+Use spacing and scale to group related material; reserve hairlines for real boundaries rather than ruling every paragraph. Short annotations beside the evidence are more useful than detached descriptions below it. Let domain-specific shapes, relevant UI details, and meaningful color carry the identity, without ornamental effects.
+
 ## Density and sizing
 
 Treat the supplied images as references, not a fixed template. A landscape card around 1200–1600 CSS pixels wide is a useful starting point for charts; short guides may be smaller or square. Prefer a compact landscape composition when the content fits. Do not force tall dense reports into a tiny social preview.
 
-Size the canvas to the useful content. Do not reserve space for a summary, footer, or equal-width columns when they add nothing. A short message may need only a title, image, and two concise text elements.
+Size the canvas to the useful content. Do not reserve space for a summary, footer, or equal-width columns when they add nothing. A short message may need only a title, image, and a few concise text elements. Substantial comparisons need enough visual structure and detail to explain their differences; do not apply this short-message treatment to every request.
 
 At roughly 1400px wide, try a 44–56px title, 22–28px primary labels, and 18–22px secondary labels. These are starting sizes, not a reason to cram content. Keep captions and caveats readable. Use consistent spacing, roughly 24–48px outer padding and 16–32px between related sections. Export at 2× resolution without confusing export pixels with readable CSS size.
 
@@ -42,7 +48,7 @@ At roughly 1400px wide, try a 44–56px title, 22–28px primary labels, and 18�
 
 Use the compared names as the title: “GPT-6 Luna vs o1 Pro Mode” is enough. Do not prepend “Model costs fell. Benchmark scores rose.” or repeat the title in a descriptive subtitle. Preserve straightforward row names such as “Price”; show supplied units once in a shared heading where appropriate.
 
-The default comparison is the title, column names, values, and useful visual marks. Omit source-image credits, verification commentary, and chart-construction notes. A supplied table or chart can be redrawn directly; it does not also need an embedded screenshot of itself. Source imagery is important when it shows the subject, not when duplicating it would repeat the same data.
+For a numeric comparison, start with the title, column names, values, and useful visual marks. For products, interfaces, or workflows, use [composition guidance](composition.md) to show how they differ rather than relying on a matrix of sentences. Omit source-image credits, verification commentary, and chart-construction notes. A supplied table or chart can be redrawn directly; it does not also need an embedded screenshot of itself. Source imagery is important when it shows the subject, not when duplicating it would repeat the same data.
 
 ## Chart and table details
 
