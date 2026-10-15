@@ -3,12 +3,12 @@ name: visual-explainer
 description: Create concise visual explanation cards, charts, comparisons, and technical summaries with a black background, white text, and purposeful color accents. Deliver shareable PNG images and editable HTML.
 metadata:
   author: arkiental
-  version: "1.0.0"
+  version: "1.1.0"
 ---
 
 # Visual Explainer — Black
 
-Turn the user's information into a visual that is easy to read in a social post. Default to one compact card, not a long web article. Keep the background pure black and primary text white. Color is welcome in charts, model labels, key values, and meaningful highlights; cyan is an option, not a restriction.
+Turn the user's information into a visual that is easy to read in a social post. Default to one compact card, not a long web article. Keep the background pure black and primary text white. Use Futura for all typography, including chart labels and footnotes. Do not silently substitute another font. If Futura is unavailable, request the font files or their location before final rendering. Color is welcome in charts, model labels, key values, and meaningful highlights; cyan is an option, not a restriction.
 
 ## Start with the visual references
 
@@ -55,3 +55,4 @@ Before delivery:
 5. Deliver the PNG inline with a download link and an optional HTML link. Keep the chat response short.
 
 Follow applicable workspace instructions for visual progress updates. Use a configured Discord workflow only when authorized; do not embed credentials, webhook URLs, personal machine paths, or upload destinations in this skill.
+

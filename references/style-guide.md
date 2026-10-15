@@ -3,7 +3,7 @@
 ## Identity
 
 - Canvas: `#000000`. Primary text: `#FFFFFF`. Secondary text: `#B8B8B8` or brighter; keep essential labels legible. Pure-white text may be used throughout for extra contrast.
-- Use a bold sans-serif headline, not the earlier serif treatment. Prefer an available clean face such as Geist, Aptos, or Segoe UI. Package fonts only when redistribution rights are established; otherwise use installed fonts and fallbacks.
+- Futura is required throughout: headings, body text, values, chart labels, and footnotes. Use genuine supplied weights; do not synthesize bold or silently substitute another typeface. Bundle authorized font files and their supplied license in `assets/fonts/`. Load them with `@font-face` using the exact supplied filenames and weight mappings. Until these files are supplied, treat font bundling and final rendering as incomplete. Before PNG export, await `document.fonts.ready` and verify that the Futura font faces loaded successfully.
 - Flush-left hierarchy. Big headline, compact takeaway, dominant chart or aligned rows, short footnotes.
 - Use whitespace and thin separators instead of nested cards. No gradients, glass effects, decorative glows, ornamental icons, or unnecessary frames.
 
@@ -45,3 +45,4 @@ Open only the example most relevant to the task initially. Open another if it cl
 - `examples/quota-and-usage.png`: uncertainty, supporting counts, and cost interpretation.
 - `examples/shipping-summary.png`: headline metrics plus chart/table pairing.
 - `examples/model-comparison.png`: ranking rows, category accents, score bars, and caveats.
+
