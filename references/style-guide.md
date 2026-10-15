@@ -4,7 +4,7 @@
 
 - Canvas: `#000000`. Primary text: `#FFFFFF`. Secondary text: `#B8B8B8` or brighter; keep essential labels legible. Pure-white text may be used throughout for extra contrast.
 - Futura is required throughout: headings, body text, values, chart labels, and footnotes. Use genuine supplied weights; do not synthesize bold or silently substitute another typeface. Use the seven bundled faces in `assets/fonts/` and the metadata-derived weight mappings in `assets/fonts/fonts.css`; see [font setup](../assets/fonts/README.md). Copy assets beside the output or embed their data for standalone HTML. Set `font-synthesis: none` and use only the supplied upright styles. Before PNG export, await `document.fonts.ready` and verify that the Futura font faces loaded successfully.
-- Prefer flush-left text and one clear focal point: the subject image, key comparison, or diagram. Keep the title subordinate to the overall composition rather than letting an oversized headline consume the card. Takeaways, section labels, and footnotes are optional.
+- Prefer flush-left text and one clear focal point: the subject image, key comparison, or diagram. Keep the title subordinate to the overall composition rather than letting an oversized headline consume the card. Default to a plain subject title with no subtitle, takeaway, or footer. Add section labels only when needed to navigate the content.
 - Use whitespace and thin separators instead of nested cards. No decorative gradients, glass effects, glows, ornamental icons, or unnecessary frames. Preserve effects already present in source imagery, including glow when it demonstrates the subject.
 
 ## Image-led composition
@@ -37,6 +37,12 @@ Treat the supplied images as references, not a fixed template. A landscape card 
 Size the canvas to the useful content. Do not reserve space for a summary, footer, or equal-width columns when they add nothing. A short message may need only a title, image, and two concise text elements.
 
 At roughly 1400px wide, try a 44–56px title, 22–28px primary labels, and 18–22px secondary labels. These are starting sizes, not a reason to cram content. Keep captions and caveats readable. Use consistent spacing, roughly 24–48px outer padding and 16–32px between related sections. Export at 2× resolution without confusing export pixels with readable CSS size.
+
+## Comparison copy
+
+Use the compared names as the title: “GPT-6 Luna vs o1 Pro Mode” is enough. Do not prepend “Model costs fell. Benchmark scores rose.” or repeat the title in a descriptive subtitle. Preserve straightforward row names such as “Price”; show supplied units once in a shared heading where appropriate.
+
+The default comparison is the title, column names, values, and useful visual marks. Omit source-image credits, verification commentary, and chart-construction notes. A supplied table or chart can be redrawn directly; it does not also need an embedded screenshot of itself. Source imagery is important when it shows the subject, not when duplicating it would repeat the same data.
 
 ## Chart and table details
 
