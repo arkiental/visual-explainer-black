@@ -12,5 +12,4 @@ This is a focused personal adaptation of the visual-explanation workflow introdu
 
 ## Required font
 
-Futura is mandatory for all output typography. Font files are not yet bundled: none were available locally when this requirement was added. Supply Futura files licensed for repository inclusion, with their license, in assets/fonts/. The agent must not silently substitute a different font.
-
+Futura is mandatory for all output typography. Seven supplied Futura Cyrillic faces are bundled in `assets/fonts/`, along with `fonts.css` and metadata-derived weight mappings. See [font setup](assets/fonts/README.md). No system-wide font installation is required.

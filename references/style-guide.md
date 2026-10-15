@@ -3,7 +3,7 @@
 ## Identity
 
 - Canvas: `#000000`. Primary text: `#FFFFFF`. Secondary text: `#B8B8B8` or brighter; keep essential labels legible. Pure-white text may be used throughout for extra contrast.
-- Futura is required throughout: headings, body text, values, chart labels, and footnotes. Use genuine supplied weights; do not synthesize bold or silently substitute another typeface. Bundle authorized font files and their supplied license in `assets/fonts/`. Load them with `@font-face` using the exact supplied filenames and weight mappings. Until these files are supplied, treat font bundling and final rendering as incomplete. Before PNG export, await `document.fonts.ready` and verify that the Futura font faces loaded successfully.
+- Futura is required throughout: headings, body text, values, chart labels, and footnotes. Use genuine supplied weights; do not synthesize bold or silently substitute another typeface. Use the seven bundled faces in `assets/fonts/` and the metadata-derived weight mappings in `assets/fonts/fonts.css`; see [font setup](../assets/fonts/README.md). Copy assets beside the output or embed their data for standalone HTML. Set `font-synthesis: none` and use only the supplied upright styles. Before PNG export, await `document.fonts.ready` and verify that the Futura font faces loaded successfully.
 - Flush-left hierarchy. Big headline, compact takeaway, dominant chart or aligned rows, short footnotes.
 - Use whitespace and thin separators instead of nested cards. No gradients, glass effects, decorative glows, ornamental icons, or unnecessary frames.
 

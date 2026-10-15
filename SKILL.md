@@ -3,12 +3,12 @@ name: visual-explainer
 description: Create concise visual explanation cards, charts, comparisons, and technical summaries with a black background, white text, and purposeful color accents. Deliver shareable PNG images and editable HTML.
 metadata:
   author: arkiental
-  version: "1.1.0"
+  version: "1.2.0"
 ---
 
 # Visual Explainer — Black
 
-Turn the user's information into a visual that is easy to read in a social post. Default to one compact card, not a long web article. Keep the background pure black and primary text white. Use Futura for all typography, including chart labels and footnotes. Do not silently substitute another font. If Futura is unavailable, request the font files or their location before final rendering. Color is welcome in charts, model labels, key values, and meaningful highlights; cyan is an option, not a restriction.
+Turn the user's information into a visual that is easy to read in a social post. Default to one compact card, not a long web article. Keep the background pure black and primary text white. Use Futura for all typography, including chart labels and footnotes. Do not silently substitute another font. Use the bundled faces and weight mappings in [assets/fonts/README.md](assets/fonts/README.md), with `assets/fonts/fonts.css` as the font-face source. Embed font data for standalone HTML or copy the font assets beside the deliverable and adjust paths. Color is welcome in charts, model labels, key values, and meaningful highlights; cyan is an option, not a restriction.
 
 ## Start with the visual references
 
